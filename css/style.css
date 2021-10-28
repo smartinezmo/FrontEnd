@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,400;0,500;0,700;1,700&family=Lato:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 0 165px;
+}
+
+header div img {
+  transition: all 2s;
+}
+header div img:hover {
+  transform: rotate(360deg);
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding-left: 28px;
+}
+
+header li:hover {
+  transform: scale(1.1);
+}
+
+header nav ul li a {
+  color: #242e52;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.Get_Started {
+  border: 0px;
+  border-radius: 50px;
+  background-color: #f3603b;
+  color: #ffffff;
+  height: 44px;
+  width: 134px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.Get_Started:hover {
+  background-color: #ffffff;
+  color: #f3603b;
+}
+
+.Get_Started_Modified {
+  background-color: #ffffff;
+  color: #f3603b;
+}
+
+.Get_Started_Modified:hover {
+  background-color: #f3603b;
+  color: #ffffff;
+}
+
+main .funcionalidad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 0 165px;
+}
+
+main .funcionalidad article {
+  margin-top: 60px;
+  width: 50%;
+}
+
+main .funcionalidad article h2 {
+  color: #232c50;
+  font-size: 58px;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  line-height: 66px;
+  margin-bottom: 30px;
+  text-align: left;
+  }
+
+main .funcionalidad article p {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 157%;
+  width: 350px; /*Revisar*/
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+main .funcionalidad div {
+  width: 50%;
+}
+
+main .funcionalidad div img {
+  margin-left: 100px;
+  width: 90%; /*revisar*/
+}
+
+main .ventajas_competitivas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  padding: 0 165px;
+}
+
+main .ventajas_competitivas div {
+  width: 50%;
+}
+
+main .ventajas_competitivas div ol {
+  width: 50%;
+}
+
+main .ventajas_competitivas div h3 {
+  color: #232c50;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 115%;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+main .ventajas_competitivas .definicion p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 151%;
+  width: 337px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+main .ventajas_competitivas div ol li h4 {
+  color: #323851;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+main .ventajas_competitivas div ol li {
+  color: #b3b2b7;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  width: 458px;
+}
+
+.lista1 {
+  text-align: justify;
+  margin-top: 0;
+}
+
+.lista2,
+.lista3 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+main .comentarios {
+  margin: 0 100px;
+  text-align: center;
+}
+
+main .comentarios h5 {
+  color: #232c50;
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 156%;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+main .comentarios .box {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  background-color: #FAFAFA;
+  margin-top: 60px;
+}
+
+main .comentarios .box h6 {
+  color: #3f4868;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main .comentarios .avatar {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 41%;
+  right: 41%;
+  top: -40px;
+  bottom: 67%;
+}
+
+main .box p {
+  color: #b9b9c1;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: static;
+  width: 380px;
+}
+
+main .comentarios button {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: block;
+}
+
+footer .primerapartefooter {
+  display: flex;
+  background-color: #f3613c;
+  color: #ffffff;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 165px;
+  margin-top: 80px;
+}
+
+footer .primerapartefooter h3 {
+  color: #ffffff;
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 156%;
+  text-align: left;
+  letter-spacing: -0.005em;
+  width: 438px;
+  justify-content: left;
+  margin-left: 10px;
+}
+
+footer .primerapartefooter button {
+  margin-top: 30px;
+  right: 35px;
+}
+
+footer .segundapartefooter {
+  display: flex;
+  background-color: #1e1e26;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 165px;
+}
+
+footer .segundapartefooter .logofooter {
+  margin-left: -60px;
+  margin-bottom: 20px;
+}
+
+footer .segundapartefooter .iconos {
+  color: #ffffff;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: -60px;
+  font-size: 20px;
+  right: auto;
+}
+
+footer .iconos i {
+  margin-left: 7px;
+}
+
+footer .primermenufooter {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+footer .primermenufooter li {
+  list-style-type: none;
+  margin-top: 13px;
+  margin-left: 30px;
+}
+
+footer .primermenufooter li a {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+footer .segundomenufooter {
+  margin-top: -70px;
+}
+
+footer .segundomenufooter li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+footer .segundomenufooter li a {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+footer .footerformulario {
+  margin-right: -75px;
+}
+
+footer .footerformulario input {
+  border: 0px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #a0a0a0;
+  height: 40px;
+  width: 201px;
+  margin-bottom: 100px;
+}
+
+footer .footerformulario input::placeholder {
+  padding-left: 12px;
+}
+
+footer .footerformulario button {
+  border: 0px;
+  border-radius: 50px;
+  background-color: #f3603b;
+  color: #ffffff;
+  height: 40px;
+  width: 63px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+footer .footerformulario button:hover{
+  background-color: #ffffff;
+  color: #f3603b;
+}
+
+footer .footerformulario p {
+  color: #8c8c94;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 18px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 375px){
+  header nav ul
+  display: none;
+}
