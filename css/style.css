@@ -17,19 +17,19 @@ header {
   padding: 0 165px;
 }
 
-header div img {
+header .logo_manage {
   transition: all 2s;
 }
-header div img:hover {
+header .logo_manage:hover {
   transform: rotate(360deg);
 }
 
-header nav ul {
+header .menu_desplegable ul {
   display: flex;
   list-style-type: none;
 }
 
-header nav ul li {
+header .menu_desplegable ul li {
   padding-left: 28px;
 }
 
@@ -37,13 +37,13 @@ header li:hover {
   transform: scale(1.1);
 }
 
-header nav ul li a {
+header .menu_desplegable ul li a {
   color: #242e52;
   font-weight: 500;
   text-decoration: none;
 }
 
-.Get_Started {
+.get_started {
   border: 0px;
   border-radius: 50px;
   background-color: #f3603b;
@@ -53,24 +53,32 @@ header nav ul li a {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-.Get_Started:hover {
+.get_started:hover {
   background-color: #ffffff;
   color: #f3603b;
 }
 
-.Get_Started_Modified {
+.get_started_modified {
+  border: 0px;
+  border-radius: 50px;
   background-color: #ffffff;
   color: #f3603b;
+  height: 44px;
+  width: 134px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-.Get_Started_Modified:hover {
+.get_started_modified:hover {
   background-color: #f3603b;
   color: #ffffff;
 }
 
 main .funcionalidad {
-  display: flex;
   align-items: flex-start;
+  align-content: center;
+  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 80px;
   padding: 0 165px;
@@ -78,7 +86,8 @@ main .funcionalidad {
 
 main .funcionalidad article {
   margin-top: 60px;
-  width: 50%;
+  max-width: 439px;
+  width: 40%;
 }
 
 main .funcionalidad article h2 {
@@ -89,7 +98,7 @@ main .funcionalidad article h2 {
   line-height: 66px;
   margin-bottom: 30px;
   text-align: left;
-  }
+}
 
 main .funcionalidad article p {
   color: #000000;
@@ -107,8 +116,8 @@ main .funcionalidad div {
 }
 
 main .funcionalidad div img {
-  margin-left: 100px;
-  width: 90%; /*revisar*/
+  margin-left: 40px;
+  max-width: 580px;
 }
 
 main .ventajas_competitivas {
@@ -163,6 +172,29 @@ main .ventajas_competitivas div ol li {
   width: 458px;
 }
 
+main .ventajas_competitivas div ol li {
+  list-style: none;
+  position: relative;
+}
+
+main .ventajas_competitivas div ol li::before {
+  counter-increment: my-sec-counter;
+  content: counter(posicion);
+  display: inline-block;
+  width: 69px;
+  height: 43px;
+  background-color: #f3603b;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 35%;
+  line-height: 30px;
+  position: absolute;
+  margin-left: -70px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
 .lista1 {
   text-align: justify;
   margin-top: 0;
@@ -195,7 +227,7 @@ main .comentarios .box {
   text-align: center;
   position: relative;
   width: 400px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin-top: 60px;
 }
 
@@ -216,6 +248,10 @@ main .comentarios .avatar {
   right: 41%;
   top: -40px;
   bottom: 67%;
+}
+
+.avatar:hover {
+  transform: scale(1.5);
 }
 
 main .box p {
@@ -354,10 +390,10 @@ footer .footerformulario button {
   height: 40px;
   width: 63px;
   margin-top: 10px;
-  margin-left: 10px;
+  left: 2px;
 }
 
-footer .footerformulario button:hover{
+footer .footerformulario button:hover {
   background-color: #ffffff;
   color: #f3603b;
 }
@@ -371,7 +407,239 @@ footer .footerformulario p {
   margin-left: 60px;
 }
 
-@media screen and (max-width: 375px){
-  header nav ul
-  display: none;
-}
+@media screen and (max-width: 375px) {
+  header {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .logo_manage {
+    align-items: flex-start;
+    margin: 50px 20px;
+    transition: all 2s;
+  }
+  header .logo_manage:hover {
+    transform: rotate(360deg);
+  }
+
+  header .menu_desplegable ul {
+    display: none;
+  }
+
+  header .get_started {
+    display: none;
+  }
+
+  main .funcionalidad {
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse;
+    display: flex;
+    margin-top: 40px;
+    padding: 0px;
+  }
+
+  main .funcionalidad article {
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  main .funcionalidad article h2 {
+    color: #232c50;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    line-height: 50px;
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  main .funcionalidad article p {
+    color: #b9b9c1;
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 30px;
+    width: auto;
+    margin: 10px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .funcionalidad .get_started {
+    margin-top: 20px;
+  }
+
+  main .funcionalidad div {
+    display: none;
+  }
+
+  main .ventajas_competitivas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  main .ventajas_competitivas div {
+    width: 100%;
+  }
+
+  main .ventajas_competitivas div ol {
+    width: 100%;
+  }
+
+  main .ventajas_competitivas div h3 {
+    color: #232c50;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 115%;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .ventajas_competitivas .definicion p {
+    color: #b9b9c1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .ventajas_competitivas .titulos_ventajas {
+    background-color: #f4e4e0;
+  }
+
+  main .ventajas_competitivas div ol li h4 {
+    color: #323851;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-left: 10px;
+    padding: 10px 5px;
+  }
+
+  main .ventajas_competitivas div ol li {
+    color: #b3b2b7;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .ventajas_competitivas div ol li {
+    list-style: none;
+    position: relative;
+  }
+
+  main .ventajas_competitivas div ol li::before {
+    counter-increment: ;
+    content: counter(posicion);
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: #f3603b;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 35%;
+    line-height: 30px;
+    position: absolute;
+    margin-left: -50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  main .ventajas_competitivas div ol li p {
+    margin-left: -40px;
+    color: #b3b2b7;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  main .comentarios {
+    margin: 0;
+    padding; 0;
+  }
+  
+  main .comentarios h5 {
+    color: #232c50;
+    font-size: 39px;
+    font-weight: bold;
+    line-height: 156%;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+  
+  main .comentarios .box {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    background-color: #fafafa;
+    margin-top: 60px;
+  }
+  
+  main .comentarios .box h6 {
+    color: #3f4868;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  main .comentarios .avatar {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 41%;
+    right: 41%;
+    top: -40px;
+    bottom: 67%;
+  }
+  
+  .avatar:hover {
+    transform: scale(1.5);
+  }
+  
+  main .box p {
+    color: #b9b9c1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: static;
+    width: 380px;
+  }
+  
+  main .comentarios button {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: block;
+  }
